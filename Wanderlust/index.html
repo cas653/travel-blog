@@ -1,0 +1,29 @@
+---
+layout: page
+title: Wanderlust
+---
+	<div id="container">
+		<img id="imagea" src="{{ '/assets/destinations-biennale-istanbul-hero.jpg' | prepend: site.baseurl }}" style="
+			height: 550px;
+			width: 800px;
+			margin-bottom: 50px;
+		">
+	
+		<img id="imageb" src="{{ '/assets/download.jpeg' | prepend: site.baseurl }}">
+	</div>
+
+
+
+<div class="wanderlust">
+  		<ul class="posts">
+    		{% for post in site.posts %}
+      		<li>
+       		 	<a class="posts" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+       		 	<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      		</li>
+    		{% endfor %}
+  		</ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
