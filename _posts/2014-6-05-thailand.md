@@ -1,16 +1,14 @@
 ---
 layout: post
-title:  "Thailand"
+title:  "To Thailand"
 date:   2014-06-05 11:30:44
-categories: places
+categories: places1
 ---
 
 <!-- Body for posting & Side Bar -->
 <div class="container">
   <div class="row">
   	<div class="col-md-8">
-  		<h2>To Thailand</h2>
-  		<h5>January 2014</h5>
   		<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
   		<hr>
   		<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>

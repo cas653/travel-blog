@@ -16,10 +16,12 @@ title: Wanderlust
 
 <div class="wanderlust">
   		<ul class="posts">
-    		{% for post in site.posts %}
-      		<li>
-       		 	<a class="posts" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-       		 	<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+       		 {% for post in site.posts %} 
+       		 <li>
+				{% if post.categories contains "wanderlust" %}
+					<a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
+					<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+				{% endif %}
       		</li>
     		{% endfor %}
   		</ul>

@@ -1,4 +1,60 @@
 ---
-layout: page
+layout: default
 title: Places
 ---
+
+<div class="places">
+	<div class="container">
+		<img src="{{ '/assets/165443_10200133732280363_1978888579_n.jpg' | prepend: site.baseurl }}" style="
+			height: 550px;
+			width: 800px;
+			margin-bottom: 25px;
+		">
+		<h2 class="text">
+        	<em>Places</em>
+   	 	</h2>
+   	 	<center><p>See everywhere I've been to thus far and a little bit about what I've learned.</p></center>
+	</div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <center><h2> 
+    {% for post in site.posts %} 
+		{% if post.categories contains "places1" %}
+			<a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
+		{% endif %}
+	{% endfor %}
+	</h2>
+	<img src="{{ '/assets/IMG_1644.JPG' | prepend: site.baseurl }}" style="
+		height: 125px;
+		width: 125px;
+	"></center>
+  </div>
+  <div class="col-md-4">
+    <center><h2>    
+    {% for post in site.posts %} 
+		{% if post.categories contains "places2" %}
+			<a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
+		{% endif %}
+	{% endfor %}
+	</h2>
+	<img src="{{ '/assets/IMG_0807.jpg' | prepend: site.baseurl }}" style="
+			height: 125px;
+			width: 125px;
+		"></center>
+ </div>
+  <div class="col-md-4">
+    <center><h2>    
+    {% for post in site.posts %} 
+		{% if post.categories contains "places3" %}
+			<a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>
+		{% endif %}
+	{% endfor %}
+	</h2>
+		<img src="{{ '/assets/IMG_0772.JPG' | prepend: site.baseurl }}" style="
+			height: 125px;
+			width: 125px;
+		"></center>
+  </div>
+</div>
